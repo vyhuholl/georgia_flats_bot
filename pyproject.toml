@@ -7,7 +7,9 @@ maintainers = [{name = "Olga Pichuzhkina", email = "vyhuholl@protonmail.com"}]
 requires-python = ">=3.10"
 dependencies = [
     "aiogram",
+    "psycopg2",
     "python-dotenv",
+    "SQLAlchemy",
     "Telethon",
 ]
 
