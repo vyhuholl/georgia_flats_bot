@@ -1,3 +1,5 @@
+"""Variables with constant values."""
+
 CHANNELS = [
     "apartments_ge",
     "arenda_ge",

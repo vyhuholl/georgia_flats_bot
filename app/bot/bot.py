@@ -1,3 +1,5 @@
+"""Объект Bot."""
+
 from aiogram import Bot
 
 from app import config
