@@ -1,0 +1,29 @@
+[project]
+name = "GeorgiaFlatsBot"
+version = "0.1.0"
+description = "Бот для мониторинга русскоязычных телеграм-каналов об аренде в Грузии."
+readme = "README.md"
+maintainers = [{name = "Olga Pichuzhkina", email = "vyhuholl@protonmail.com"}]
+requires-python = ">=3.10"
+dependencies = [
+    "aiogram",
+    "Telethon",
+]
+
+[project.optional-dependencies]
+test = ["coverage", "pytest"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+branch = true
+source = ["tests"]
+
+[tool.black]
+line-length = 79
